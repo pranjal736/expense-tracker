@@ -12,34 +12,15 @@ A simple full-stack web application to track daily expenses with categories and 
 - Backend API with database storage
 
  Tech Stack
+
  Frontend:
 - HTML
 - CSS
 - JavaScript
-
  Backend:
 - Node.js
 - Express.js
-
  Database:
 - MongoDB (Atlas)
 
 
- Project Structure
-expense-tracker/
-│
-├── backend/
-│ ├── server.js
-│ ├── models/
-│ ├── routes/
-│ ├── controllers/
-│ ├── config/
-│ ├── .env
-│
-├── frontend/
-│ ├── index.html
-│ ├── style.css
-│ ├── script.js
-│
-├── .gitignore
-└── README.md
