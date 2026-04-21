@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="app">
+  <header class="topbar">
+    <h1>Expense Tracker Dashboard</h1>
+    <div>
+      <span id="welcomeUser"></span>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </header>
+
+  <div class="stats">
+    <div class="card">
+      <h3>Total Expense</h3>
+      <p id="totalExpense">₹0</p>
+    </div>
+
+    <div class="card">
+      <h3>Total Entries</h3>
+      <p id="totalEntries">0</p>
+    </div>
+  </div>
+
+  <div class="card form-card">
+    <h3>Add Expense</h3>
+    <form id="expenseForm">
+      <input type="text" id="title" placeholder="Expense Title" required>
+      <input type="number" id="amount" placeholder="Amount ₹" required>
+
+      <select id="category">
+        <option>Food 🍕</option>
+        <option>Travel 🚗</option>
+        <option>Shopping 🛍️</option>
+      </select>
+
+      <button>Add</button>
+    </form>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Recent Expenses</h3>
+      <ul id="list"></ul>
+    </div>
+
+    <div class="card">
+      <h3>Overview Chart</h3>
+      <canvas id="chart"></canvas>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+      
+</body>
+</html>
