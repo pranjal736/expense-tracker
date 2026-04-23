@@ -11,6 +11,16 @@ A simple full-stack web application to track daily expenses with categories and 
 - Simple and clean UI
 - Backend API with database storage
 
+  How to Run the Project
+
+1. Clone the repository
+2. Open terminal inside backend folder
+3. Install dependencies: npm install
+4. Create a `.env` file inside backend folder and add:
+   MONGO_URI=your_mongodb_connection_string PORT=5000
+5. Run backend:  node server.js
+6. Open frontend/index.html in browser
+
  Tech Stack
 
  Frontend:
@@ -22,5 +32,3 @@ A simple full-stack web application to track daily expenses with categories and 
 - Express.js
  Database:
 - MongoDB (Atlas)
-
-
